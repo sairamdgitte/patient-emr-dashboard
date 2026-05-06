@@ -1,0 +1,155 @@
+patient_id,allergy_id,condition_id,medication_statement_id_y,dateAsserted_x,dateAsserted_y,loinc_display,full_name_for_matching,value,unit,reference_range
+banks-mia-leanne,chlorhexidine,uti,active-bisoprolol,2018-07-10,2019-02-05,Cholesterol [Moles/volume] in Serum or Plasma,Mia Leanne Banks,4.8,mmol/L,"3.0-5.2"
+banks-mia-leanne,chlorhexidine,uti,active-bisoprolol,2018-07-10,2019-02-05,Cholesterol in HDL [Moles/volume] in Serum or Plasma,Mia Leanne Banks,1.4,mmol/L,">1.0"
+banks-mia-leanne,chlorhexidine,uti,active-bisoprolol,2018-07-10,2019-02-05,Cholesterol in LDL [Moles/volume] in Serum or Plasma,Mia Leanne Banks,2.8,mmol/L,"<3.0"
+banks-mia-leanne,chlorhexidine,uti,active-bisoprolol,2018-07-10,2019-02-05,Oxygen saturation in Arterial blood by Pulse oximetry,Mia Leanne Banks,98,%,"95-100"
+banks-mia-leanne,chlorhexidine,uti,active-bisoprolol,2018-07-10,2019-02-05,Respiratory rate,Mia Leanne Banks,16,breaths/min,"12-20"
+banks-mia-leanne,chlorhexidine,uti,active-bisoprolol,2018-07-10,2019-02-05,Triglyceride [Moles/volume] in Serum or Plasma,Mia Leanne Banks,1.2,mmol/L,"<1.7"
+banks-mia-leanne,chlorhexidine,uti,active-bisoprolol,2018-07-10,2019-02-05,Waist Circumference at umbilicus by Tape measure,Mia Leanne Banks,82,cm,"<88"
+banks-mia-leanne,chlorhexidine,uti,active-bisoprolol,2019-02-05,2019-02-05,Cholesterol [Moles/volume] in Serum or Plasma,Mia Leanne Banks,4.6,mmol/L,"3.0-5.2"
+banks-mia-leanne,chlorhexidine,uti,active-bisoprolol,2019-02-05,2019-02-05,Cholesterol in HDL [Moles/volume] in Serum or Plasma,Mia Leanne Banks,1.5,mmol/L,">1.0"
+banks-mia-leanne,chlorhexidine,uti,active-bisoprolol,2019-02-05,2019-02-05,Cholesterol in LDL [Moles/volume] in Serum or Plasma,Mia Leanne Banks,2.5,mmol/L,"<3.0"
+banks-mia-leanne,chlorhexidine,uti,active-bisoprolol,2019-02-05,2019-02-05,Oxygen saturation in Arterial blood by Pulse oximetry,Mia Leanne Banks,99,%,"95-100"
+banks-mia-leanne,chlorhexidine,uti,active-bisoprolol,2019-02-05,2019-02-05,Respiratory rate,Mia Leanne Banks,15,breaths/min,"12-20"
+banks-mia-leanne,chlorhexidine,uti,active-bisoprolol,2019-02-05,2019-02-05,Triglyceride [Moles/volume] in Serum or Plasma,Mia Leanne Banks,1.1,mmol/L,"<1.7"
+banks-mia-leanne,chlorhexidine,uti,active-bisoprolol,2019-02-05,2019-02-05,Waist Circumference at umbilicus by Tape measure,Mia Leanne Banks,81,cm,"<88"
+banks-mia-leanne,chlorhexidine,uti,completed-chloramphenicol,2018-07-10,2019-02-05,Cholesterol [Moles/volume] in Serum or Plasma,Mia Leanne Banks,5.1,mmol/L,"3.0-5.2"
+banks-mia-leanne,chlorhexidine,uti,completed-chloramphenicol,2018-07-10,2019-02-05,Cholesterol in HDL [Moles/volume] in Serum or Plasma,Mia Leanne Banks,1.3,mmol/L,">1.0"
+banks-mia-leanne,chlorhexidine,uti,completed-chloramphenicol,2018-07-10,2019-02-05,Cholesterol in LDL [Moles/volume] in Serum or Plasma,Mia Leanne Banks,3.1,mmol/L,"<3.0"
+banks-mia-leanne,chlorhexidine,uti,completed-chloramphenicol,2018-07-10,2019-02-05,Oxygen saturation in Arterial blood by Pulse oximetry,Mia Leanne Banks,97,%,"95-100"
+banks-mia-leanne,chlorhexidine,uti,completed-chloramphenicol,2018-07-10,2019-02-05,Respiratory rate,Mia Leanne Banks,18,breaths/min,"12-20"
+banks-mia-leanne,chlorhexidine,uti,completed-chloramphenicol,2018-07-10,2019-02-05,Triglyceride [Moles/volume] in Serum or Plasma,Mia Leanne Banks,1.4,mmol/L,"<1.7"
+banks-mia-leanne,chlorhexidine,uti,completed-chloramphenicol,2018-07-10,2019-02-05,Waist Circumference at umbilicus by Tape measure,Mia Leanne Banks,84,cm,"<88"
+banks-mia-leanne,chlorhexidine,uti,completed-chloramphenicol,2019-02-05,2019-02-05,Cholesterol [Moles/volume] in Serum or Plasma,Mia Leanne Banks,4.9,mmol/L,"3.0-5.2"
+banks-mia-leanne,chlorhexidine,uti,completed-chloramphenicol,2019-02-05,2019-02-05,Cholesterol in HDL [Moles/volume] in Serum or Plasma,Mia Leanne Banks,1.4,mmol/L,">1.0"
+banks-mia-leanne,chlorhexidine,uti,completed-chloramphenicol,2019-02-05,2019-02-05,Cholesterol in LDL [Moles/volume] in Serum or Plasma,Mia Leanne Banks,2.9,mmol/L,"<3.0"
+banks-mia-leanne,chlorhexidine,uti,completed-chloramphenicol,2019-02-05,2019-02-05,Oxygen saturation in Arterial blood by Pulse oximetry,Mia Leanne Banks,98,%,"95-100"
+banks-mia-leanne,chlorhexidine,uti,completed-chloramphenicol,2019-02-05,2019-02-05,Respiratory rate,Mia Leanne Banks,16,breaths/min,"12-20"
+banks-mia-leanne,chlorhexidine,uti,completed-chloramphenicol,2019-02-05,2019-02-05,Triglyceride [Moles/volume] in Serum or Plasma,Mia Leanne Banks,1.3,mmol/L,"<1.7"
+banks-mia-leanne,chlorhexidine,uti,completed-chloramphenicol,2019-02-05,2019-02-05,Waist Circumference at umbilicus by Tape measure,Mia Leanne Banks,83,cm,"<88"
+banks-mia-leanne,chlorhexidine,uti,previous-use-diflucan,2018-07-10,2018-07-10,Cholesterol [Moles/volume] in Serum or Plasma,Mia Leanne Banks,5.2,mmol/L,"3.0-5.2"
+banks-mia-leanne,chlorhexidine,uti,previous-use-diflucan,2018-07-10,2018-07-10,Cholesterol in HDL [Moles/volume] in Serum or Plasma,Mia Leanne Banks,1.2,mmol/L,">1.0"
+banks-mia-leanne,chlorhexidine,uti,previous-use-diflucan,2018-07-10,2018-07-10,Cholesterol in LDL [Moles/volume] in Serum or Plasma,Mia Leanne Banks,3.3,mmol/L,"<3.0"
+banks-mia-leanne,chlorhexidine,uti,previous-use-diflucan,2018-07-10,2018-07-10,Oxygen saturation in Arterial blood by Pulse oximetry,Mia Leanne Banks,96,%,"95-100"
+banks-mia-leanne,chlorhexidine,uti,previous-use-diflucan,2018-07-10,2018-07-10,Respiratory rate,Mia Leanne Banks,19,breaths/min,"12-20"
+banks-mia-leanne,chlorhexidine,uti,previous-use-diflucan,2018-07-10,2018-07-10,Triglyceride [Moles/volume] in Serum or Plasma,Mia Leanne Banks,1.6,mmol/L,"<1.7"
+banks-mia-leanne,chlorhexidine,uti,previous-use-diflucan,2018-07-10,2018-07-10,Waist Circumference at umbilicus by Tape measure,Mia Leanne Banks,86,cm,"<88"
+banks-mia-leanne,chlorhexidine,uti,previous-use-diflucan,2019-02-05,2018-07-10,Cholesterol [Moles/volume] in Serum or Plasma,Mia Leanne Banks,5.0,mmol/L,"3.0-5.2"
+banks-mia-leanne,chlorhexidine,uti,previous-use-diflucan,2019-02-05,2018-07-10,Cholesterol in HDL [Moles/volume] in Serum or Plasma,Mia Leanne Banks,1.3,mmol/L,">1.0"
+banks-mia-leanne,chlorhexidine,uti,previous-use-diflucan,2019-02-05,2018-07-10,Cholesterol in LDL [Moles/volume] in Serum or Plasma,Mia Leanne Banks,3.0,mmol/L,"<3.0"
+banks-mia-leanne,chlorhexidine,uti,previous-use-diflucan,2019-02-05,2018-07-10,Oxygen saturation in Arterial blood by Pulse oximetry,Mia Leanne Banks,97,%,"95-100"
+banks-mia-leanne,chlorhexidine,uti,previous-use-diflucan,2019-02-05,2018-07-10,Respiratory rate,Mia Leanne Banks,17,breaths/min,"12-20"
+banks-mia-leanne,chlorhexidine,uti,previous-use-diflucan,2019-02-05,2018-07-10,Triglyceride [Moles/volume] in Serum or Plasma,Mia Leanne Banks,1.5,mmol/L,"<1.7"
+banks-mia-leanne,chlorhexidine,uti,previous-use-diflucan,2019-02-05,2018-07-10,Waist Circumference at umbilicus by Tape measure,Mia Leanne Banks,85,cm,"<88"
+howe-deangelo,noneknown,aci,atorvastatin,2018-07-15,2021-09-26,Blood pressure panel with all children optional,Deangelo Howe,128/82,mmHg,"<120/80"
+howe-deangelo,noneknown,aci,atorvastatin,2018-07-15,2021-09-26,Body height,Deangelo Howe,178,cm,"N/A"
+howe-deangelo,noneknown,aci,atorvastatin,2018-07-15,2021-09-26,Heart rate,Deangelo Howe,72,bpm,"60-100"
+howe-deangelo,noneknown,aci,atorvastatin,2021-09-26,2021-09-26,Blood pressure panel with all children optional,Deangelo Howe,124/78,mmHg,"<120/80"
+howe-deangelo,noneknown,aci,atorvastatin,2021-09-26,2021-09-26,Body height,Deangelo Howe,178,cm,"N/A"
+howe-deangelo,noneknown,aci,atorvastatin,2021-09-26,2021-09-26,Heart rate,Deangelo Howe,68,bpm,"60-100"
+howe-deangelo,noneknown,aci,missing-medication,2018-07-15,2018-07-15,Blood pressure panel with all children optional,Deangelo Howe,135/88,mmHg,"<120/80"
+howe-deangelo,noneknown,aci,missing-medication,2018-07-15,2018-07-15,Body height,Deangelo Howe,178,cm,"N/A"
+howe-deangelo,noneknown,aci,missing-medication,2018-07-15,2018-07-15,Heart rate,Deangelo Howe,76,bpm,"60-100"
+howe-deangelo,noneknown,aci,missing-medication,2021-09-26,2018-07-15,Blood pressure panel with all children optional,Deangelo Howe,132/85,mmHg,"<120/80"
+howe-deangelo,noneknown,aci,missing-medication,2021-09-26,2018-07-15,Body height,Deangelo Howe,178,cm,"N/A"
+howe-deangelo,noneknown,aci,missing-medication,2021-09-26,2018-07-15,Heart rate,Deangelo Howe,74,bpm,"60-100"
+howe-deangelo,noneknown,aci,missing-status,2018-07-15,2018-07-15,Blood pressure panel with all children optional,Deangelo Howe,130/84,mmHg,"<120/80"
+howe-deangelo,noneknown,aci,missing-status,2018-07-15,2018-07-15,Body height,Deangelo Howe,178,cm,"N/A"
+howe-deangelo,noneknown,aci,missing-status,2018-07-15,2018-07-15,Heart rate,Deangelo Howe,70,bpm,"60-100"
+howe-deangelo,noneknown,aci,missing-status,2021-09-26,2018-07-15,Blood pressure panel with all children optional,Deangelo Howe,128/82,mmHg,"<120/80"
+howe-deangelo,noneknown,aci,missing-status,2021-09-26,2018-07-15,Body height,Deangelo Howe,178,cm,"N/A"
+howe-deangelo,noneknown,aci,missing-status,2021-09-26,2018-07-15,Heart rate,Deangelo Howe,72,bpm,"60-100"
+howe-deangelo,noneknown,aci,reaptan,2018-07-15,2018-07-15,Blood pressure panel with all children optional,Deangelo Howe,138/90,mmHg,"<120/80"
+howe-deangelo,noneknown,aci,reaptan,2018-07-15,2018-07-15,Body height,Deangelo Howe,178,cm,"N/A"
+howe-deangelo,noneknown,aci,reaptan,2018-07-15,2018-07-15,Heart rate,Deangelo Howe,78,bpm,"60-100"
+howe-deangelo,noneknown,aci,reaptan,2021-09-26,2018-07-15,Blood pressure panel with all children optional,Deangelo Howe,136/88,mmHg,"<120/80"
+howe-deangelo,noneknown,aci,reaptan,2021-09-26,2018-07-15,Body height,Deangelo Howe,178,cm,"N/A"
+howe-deangelo,noneknown,aci,reaptan,2021-09-26,2018-07-15,Heart rate,Deangelo Howe,76,bpm,"60-100"
+howe-deangelo,noneknown,aci,reaptan-tpp,2018-07-15,2018-07-15,Blood pressure panel with all children optional,Deangelo Howe,140/92,mmHg,"<120/80"
+howe-deangelo,noneknown,aci,reaptan-tpp,2018-07-15,2018-07-15,Body height,Deangelo Howe,178,cm,"N/A"
+howe-deangelo,noneknown,aci,reaptan-tpp,2018-07-15,2018-07-15,Heart rate,Deangelo Howe,80,bpm,"60-100"
+howe-deangelo,noneknown,aci,reaptan-tpp,2021-09-26,2018-07-15,Blood pressure panel with all children optional,Deangelo Howe,138/90,mmHg,"<120/80"
+howe-deangelo,noneknown,aci,reaptan-tpp,2021-09-26,2018-07-15,Body height,Deangelo Howe,178,cm,"N/A"
+howe-deangelo,noneknown,aci,reaptan-tpp,2021-09-26,2018-07-15,Heart rate,Deangelo Howe,78,bpm,"60-100"
+archibald-dante,Patient,male,1985-12-02,ARCHIBALD,Dante,official,0870103279,0491571491,0870100396,143 Greenwood Pnt,Mitchell,NT,0832,AU,8003608000311670,49516516711,Neither Aboriginal nor Torres Strait Islander origin,Identifies as male gender (finding)
+baby-banks-john,Patient,male,2022-09-14,BANKS,Baby of Mia,temp,,,,,,,,,,,,
+baldry-terence-emile,Patient,male,1990-10-26,BALDRY,Terence EMILE,official,0770108549,0491570737,0770102417,184 Victoria Pnt,Upper Glastonbury,QLD,4570,AU,8003608166980391,49516521911,Aboriginal but not Torres Strait Islander origin,Identifies as male gender (finding)
+baldwin-dinah,Patient,other,1958-08-19,BALDWIN,Dinah,official,0270101193,0491573770,0270106081,128 Stone Jnc,Largs,NSW,2320,AU,8003608833648462,,,Unknown
+ballantyne-flavia-indira,Patient,female,1973-06-17,BALLANTYNE,Flavia INDIRA,official,0870106296,0491570110,0870101585,73 Abattoir Gdns,Wellington Forest,WA,6236,AU,8003608833648488,69518260311,Not stated/inadequately described,
+ballantyne-kelvin-hans,Patient,male,1978-01-09,BALLANTYNE,Kelvin HANS,official,0870104385,0491570313,0870107495,73 Abattoir Gdns,Wellington Forest,WA,6236,AU,8003608500314760,69518260312,Both Aboriginal and Torres Strait Islander origin,
+ballantyne-sandy-choy,Patient,male,2001-01-02,BALLANTYNE,Sandy CHOY,official,0870106296,0491570737,0870100699,73 Abattoir Gdns,Wellington Forest,WA,6236,AU,8003608333647279,69518260313,Torres Strait Islander but not Aboriginal origin,Identifies as gender nonbinary
+ballantyne-terry-bob,Patient,male,2004-08-07,BALLANTYNE,Terry BOB,official,0870106296,0491571266,,73 Abattoir Gdns,Wellington Forest,WA,6236,AU,8003608333647287,69518260314,Neither Aboriginal nor Torres Strait Islander origin,
+banks-jamila-angie,Patient,female,2018-08-05,BANKS,Jamila ANGIE,official,0270107520,,,50 Sebastien St,Minjary,NSW,2720,AU,8003608000311761,29545410414,Neither Aboriginal nor Torres Strait Islander origin,Identifies as gender nonbinary
+banks-jeramy-ezra,Patient,male,1971-05-14,BANKS,Jeramy EZRA,official,0270107520,0491574118,0270101153,50 Sebastien St,Minjary,NSW,2720,AU,8003608166980417,29545410411,Neither Aboriginal nor Torres Strait Islander origin,
+banks-jonas-cary,Patient,male,2008-05-19,BANKS,Jonas CARY,official,0270107520,0491575254,,50 Sebastien St,Minjary,NSW,2720,AU,8003608000311753,29545410413,Aboriginal but not Torres Strait Islander origin,
+banks-mia-leanne,Patient,female,1983-08-25,BANKS,Mia LEANNE,official,0270107520,0491574632,0270102724,50 Sebastien St,Minjary,NSW,2720,AU,8003608333647261,29545410412,Not stated/inadequately described,Identifies as female gender (finding)
+baratz-toni,Patient,female,1978-06-16,BARATZ,Toni,official,0870101270,0491570156,0870108006,24 Law Cir,Bassendean,WA,6054,AU,8003608000311662,69518252411,Aboriginal but not Torres Strait Islander origin,Identifies as female gender
+bassett-imogene-betsy,Patient,female,1966-08-20,BASSETT,Imogene BETSY,official,0870104102,0491570158,0870108047,67 Hume Cct,Moorine Rock,WA,6425,AU,8003608000311696,69518257911,Torres Strait Islander but not Aboriginal origin,Unknown
+belger-remedios,Patient,female,1989-01-04,BELGER,Remedios,official,0770109100,0491570159,0770103121,200 Ocean Pl,Logan Reserve,QLD,4133,AU,8003608666976378,49516515811,Both Aboriginal and Torres Strait Islander origin,
+bennelong-anne,Patient,female,1968-10-11,Bennelong,Anne,official,,0491 572 665,,4 Brisbane Street,Brisbane,QLD,4112,AU,,6951449677,Aboriginal but not Torres Strait Islander origin,
+black-kerry-dougal,Patient,male,2001-10-25,BLACK,Kerry DOUGAL,official,0270109494,0423720003,0270103810,103 East Est,Monash,ACT,2904,AU,8003608000311688,29545406111,Neither Aboriginal nor Torres Strait Islander origin,
+boulton-annika,Patient,female,1956-11-28,BOULTON,Annika,official,0770104204,0491570006,0770102941,55 Compton Pde,Draper,QLD,4520,AU,8003608000311613,49516511211,Neither Aboriginal nor Torres Strait Islander origin,
+britton-brian-edwin,Patient,male,1998-08-21,BRITTON,Brian EDWIN,official,0870106435,0491576801,0870108359,79 Elenore Rdge,Mitchellville,SA,5602,AU,8003608333647196,59511387511,Aboriginal but not Torres Strait Islander origin,
+callow-veronica-connie,Patient,female,1992-02-07,CALLOW,Veronica CONNIE,official,0770105209,0491570110,0770104150,169 Zorro Hts,Corella,QLD,4570,AU,8003608666976436,49516519411,Neither Aboriginal nor Torres Strait Islander origin,
+campbell-ambrose,Patient,unknown,1995-06-16,CAMPBELL,Ambrose,official,0870101091,0491570159,0870100834,188 Plaza Est,Rossmore,WA,6401,AU,8003608000311720,,,Identifies as female gender (finding)
+cane-cheyenne-elaina,Patient,female,1970-04-10,CANE,Cheyenne ELAINA,official,0270105226,0491572983,0270103169,85 Dock Cct,Mongarlowe,NSW,2622,AU,8003608500314737,29545409811,Aboriginal but not Torres Strait Islander origin,
+cummings-angelo,Patient,male,1966-03-08,CUMMINGS,Angelo,official,0370103303,0458625039,0370104391,193 Versace Qy,Rosetta,TAS,7010,AU,8003608500314703,69518255111,Torres Strait Islander but not Aboriginal origin,
+davis-juan,Patient,male,1990-11-03,DAVIS,Juan,official,0270103863,0449502039,0270103810,98 Grande Gdns,Monash,ACT,2904,AU,8003608666976402,29545404311,Aboriginal but not Torres Strait Islander origin,
+dietrich-blake-louis,Patient,male,2017-04-20,DIETRICH,Blake LOUIS,official,0270109186,0424590797,0270103810,77 Yoga Rdge,Mitchell,ACT,2911,AU,8003608666976493,29545411312,Not stated/inadequately described,
+dietrich-diedre-alicia,Patient,female,2017-04-20,DIETRICH,Diedre ALICIA,official,0270106293,0445595670,0270103810,77 Yoga Rdge,Mitchell,ACT,2911,AU,8003608333647295,29545411314,Not stated/inadequately described,
+dietrich-kimbra-althea,Patient,female,2017-04-20,DIETRICH,Kimbra ALTHEA,official,0270101803,0464077679,0270103810,77 Yoga Rdge,Mitchell,ACT,2911,AU,8003608500314778,29545411313,Neither Aboriginal nor Torres Strait Islander origin,
+dietrich-phillipa-grace,Patient,female,1985-06-16,DIETRICH,Phillipa GRACE,official,0270109317,0433350288,0270103810,77 Yoga Rdge,Mitchell,ACT,2911,AU,8003608666976485,29545411311,Aboriginal but not Torres Strait Islander origin,
+downie-grant,Patient,male,2000-01-03,DOWNIE,Grant,official,0270103810,0475351895,0270103810,54 Toby Cnr,Calwell,ACT,2905,AU,8003608333647170,29545403411,Aboriginal but not Torres Strait Islander origin,
+ewing-ferdinand,Patient,male,1961-09-23,EWING,Ferdinand,official,0370102259,0491576398,0370103189,134 William Dr,Ringwood East,VIC,3135,AU,8003608166980375,39513336111,Not stated/inadequately described,
+foreman-caterina,Patient,female,1970-07-24,FOREMAN,Caterina,official,0370109077,0491576801,0370106312,149 Farmer Cnr,Sunshine,VIC,3020,AU,8003608666976386,39513337011,Neither Aboriginal nor Torres Strait Islander origin,
+frost-rhett-kent,Patient,male,1969-08-20,FROST,Rhett KENT,official,0870102178,0491578957,0870103494,73 Shall Cct,Hampden,SA,5374,AU,8003608166980466,59511388411,Aboriginal but not Torres Strait Islander origin,
+hampton-jenice,Patient,female,1997-08-25,HAMPTON,Jenice,official,0870104626,0491570157,0870108919,72 Rail Gr,Capel River,WA,6271,AU,8003608500314695,69518253311,Neither Aboriginal nor Torres Strait Islander origin,
+hayes-arianne,Patient,female,1961-07-12,HAYES,Arianne,official,0770101471,0491570157,0770104085,198 Stone Pl,Morgan Park,QLD,4370,AU,8003608833648397,49516513011,Neither Aboriginal nor Torres Strait Islander origin,Identifies as female gender (finding)
+hoskins-marisa,Patient,other,1991-02-06,HOSKINS,Marisa,official,0942991234,,,23 Rogers Road Bay View,Napier,(New Zealand),4104,,8003608333647246,,,
+hoskins-sergio-lionel,Patient,male,1991-05-13,HOSKINS,Sergio LIONEL,official,0370106462,0491578957,0370106474,112 Farmer Hts,Tostaree,VIC,3888,AU,8003608666976410,39513340411,Not stated/inadequately described,Asked But Declined
+howe-deangelo,Patient,male,1975-06-21,HOWE,Deangelo,official,0770109269,0491570156,0770105770,134 Copper Hts,Curra,QLD,4570,AU,8003608000311621,49516512111,Neither Aboriginal nor Torres Strait Islander origin,
+hulme-brant,Patient,male,2001-07-13,HULME,Brant,official,0270105704,0445351522,0270103810,58 Constitution Lane,Erindale Centre,ACT,2903,AU,8003608500314711,29545405211,Torres Strait Islander but not Aboriginal origin,Identifies as gender nonbinary
+humphries-jayson,Patient,other,1968-05-14,HUMPHRIES,Jayson,official,0870100172,0491572665,0870102114,41 Queen St,Areyonga,NT,0872,AU,8003608333647253,,,Identifies as male gender (finding)
+inveraity-polly,Patient,female,1996-03-03,INVERAITY,Polly,official,0370105805,0491577426,0370105914,80 Mill Hts,Mount Doran,VIC,3334,AU,8003608000311639,39513338911,Both Aboriginal and Torres Strait Islander origin,Unknown
+irvine-ronny-lawrence,Patient,male,1953-07-19,IRVINE,Ronny LAWRENCE,official,0270105046,0491572665,0270100361,180 Hermann Rd,Belmore River,NSW,2440,AU,8003608833648421,29545407011,Torres Strait Islander but not Aboriginal origin,Identifies as gender nonbinary
+italia-sofia-missing-birthDate,Patient,female,,Italia,Sofia,,,,,Piazza del Colosseo,Rome,Lazio,00184,ITA,,,,
+italia-sofia-missing-gender,Patient,unknown,1989-05-07,Italia,Sofia,,,,,Piazza del Colosseo,Rome,Lazio,00184,ITA,,,,
+italia-sofia-missing-identifier,Patient,female,1989-05-07,Italia,Sofia,,,,,Piazza del Colosseo,Rome,Lazio,00184,ITA,,,,
+italia-sofia-missing-name,Patient,female,1989-05-07,,,,,,,Piazza del Colosseo,Rome,Lazio,00184,ITA,,,,
+italia-sofia-suppressed-birthDate,Patient,female,,Italia,Sofia,,,,,Piazza del Colosseo,Rome,Lazio,00184,ITA,,,,
+italia-sofia-suppressed-gender,Patient,unknown,1989-05-07,Italia,Sofia,,,,,Piazza del Colosseo,Rome,Lazio,00184,ITA,,,,
+italia-sofia-suppressed-identifier,Patient,female,1989-05-07,Italia,Sofia,,,,,Piazza del Colosseo,Rome,Lazio,00184,ITA,,,,
+italia-sofia-suppressed-name,Patient,female,1989-05-07,,,,,,,Piazza del Colosseo,Rome,Lazio,00184,ITA,,,,
+italia-sofia,Patient,female,1989-05-07,Italia,Sofia,,,,,Piazza del Colosseo,Rome,Lazio,00184,ITA,,,,
+johnson-joyce,Patient,female,1985-02-06,JOHNSON,Joyce,official,0270108012,0491571804,0270109558,139 River Lane,Palmvale,NSW,2484,AU,8003608500314679,29545401611,Neither Aboriginal nor Torres Strait Islander origin,
+keaton-jayme,Patient,female,1994-04-15,KEATON,Jayme,official,0270104520,0491572549,0270103592,143 Short Cir,Berowra,NSW,2081,AU,8003608833648405,29545402511,Not stated/inadequately described,Identifies as gender nonbinary
+little-rose-gretal,Patient,female,1960-10-24,LITTLE,Rose GRETAL,official,0870106748,0491575789,0870102104,89 William Ave,Kulgera,NT,0872,AU,8003608333647329,49516523711,Aboriginal but not Torres Strait Islander origin,
+lynch-alyce-shauna,Patient,female,2009-12-02,LYNCH,Alyce SHAUNA,official,0770109326,0491570313,0770104778,162 Pine Cnr,Miami,QLD,4220,AU,8003608333647212,49516520011,Both Aboriginal and Torres Strait Islander origin,
+mackay-elliott,Patient,male,2024-01-24,MACKAY,Elliott,official,0370108075,,,28 Stone Cr,Appin South,VIC,3579,AU,8003608333647220,39513341313,Aboriginal but not Torres Strait Islander origin,
+mackay-fritz,Patient,male,1978-06-21,MACKAY,Fritz,official,0370108075,0491578888,0370105614,28 Stone Cr,Appin South,VIC,3579,AU,8003608000311712,39513341312,Not stated/inadequately described,
+mackay-heather,Patient,female,1982-11-27,MACKAY,Heather,official,0370108075,0491578148,0370103228,28 Stone Cr,Appin South,VIC,3579,AU,8003608666976451,39513341311,Aboriginal but not Torres Strait Islander origin,Identifies as male gender (finding)
+martin-shawn,Patient,other,1942-07-11,MARTIN,Shawn,official,0770106438,0491571266,0770107277,12 Pheonix Lane,Walliebum,QLD,4655,AU,8003608833648454,,,
+moffitt-heath-igor,Patient,male,1956-06-15,MOFFITT,Heath IGOR,official,0370103122,0491579455,0370105436,103 King Gr,Darraweit Guim,VIC,3756,AU,8003608666976477,39513342211,Neither Aboriginal nor Torres Strait Islander origin,
+morris-charlotte,Patient,female,1994-11-11,MORRIS,Charlotte,official,0370103886,0491577644,0370106762,175 Zeppelin Ave,Mountain View,VIC,3988,AU,8003608500314687,39513339811,Aboriginal but not Torres Strait Islander origin,
+moylan-brock,Patient,male,1985-10-02,MOYLAN,Brock,official,0870107965,0491570006,0870103483,114 Olde Tce,Narra Tarra,WA,6532,AU,8003608000311654,69518251511,Both Aboriginal and Torres Strait Islander origin,
+nash-abel,Patient,male,1993-07-22,NASH,Abel,official,0870100899,0491571804,0870109728,114 Gottfried Cct,Atitjere,NT,0872,AU,8003608166980383,49516517611,Both Aboriginal and Torres Strait Islander origin,
+nielsen-eleanore,Patient,other,1945-04-12,NIELSEN,Eleanore,official,0370106104,0491579760,0370109170,170 Rail Lane,Powelltown,VIC,3797,AU,8003608500314752,,,
+odonnell-gillian,Patient,other,1977-03-27,O'DONNELL,Gillian,official,0770102317,0491571491,0770109114,81 Gateway Esp,Loganlea,QLD,4131,AU,8003608666976469,,,
+pennington-donnie-kip,Patient,male,2009-11-04,PENNINGTON,Donnie KIP,official,0370106629,0443892059,0370101498,192 Cathedral Dr,Bicheno,TAS,7215,AU,8003608500314729,69518259711,Not stated/inadequately described,
+potts-felix-ernie,Patient,male,1995-11-19,POTTS,Felix ERNIE,official,0370102830,0450188367,0370108260,182 Ocean Ct,Opossum Bay,TAS,7023,AU,8003608666976428,69518258811,Neither Aboriginal nor Torres Strait Islander origin,
+ralph-rudolf,Patient,unknown,1948-10-24,RALPH,Rudolf,official,,0491577426,,Svingen 28,Oslo,(Norway),0107,,8003608000311738,,,
+ridgewell-troy,Patient,unknown,1972-05-14,RIDGEWELL,Troy,official,0270104193,0430727052,0270103810,79 Elenore Tce,Macarthur,ACT,2904,AU,8003608833648470,,,Identifies as male gender (finding)
+roberts-fred,Patient,male,1961-06-16,ROBERTS,Fred,official,0770109298,0491570158,0770104622,33 Southern Cl,Westbrook,QLD,4350,AU,8003608500314661,49516514911,Neither Aboriginal nor Torres Strait Islander origin,Identifies as gender nonbinary
+robson-adam,Patient,male,1991-05-14,ROBSON,Adam,official,0370106335,0424064523,0370107954,18 Queen Cir,Rushy Lagoon,TAS,7264,AU,8003608333647162,69518254211,Not stated/inadequately described,
+sandilands-kendall,Patient,female,1981-04-10,SANDILANDS,Kendall,official,0870106664,0491576398,0870101896,81 Marine Gr,Sheaoak Flat,SA,5581,AU,8003608833648413,59511386611,Torres Strait Islander but not Aboriginal origin,
+sandilands-young,Patient,unknown,1962-03-09,SANDILANDS,Young,official,0870109923,0491577644,0870107451,85 Dean Cl,Warnertown,SA,5540,AU,8003608000311746,,,Asked But Declined
+scott-elijah-ken,Patient,male,1986-11-28,SCOTT,Elijah KEN,official,0270103850,0433952520,0270103810,81 Short Cir,Gilmore,ACT,2905,AU,8003608333647204,29545408911,Torres Strait Islander but not Aboriginal origin,
+simpson-tristan,Patient,male,1950-09-27,SIMPSON,Tristan,official,0370106549,0481716021,0370100282,132 Glendon Lane,Strickland,TAS,7140,AU,8003608666976394,69518256011,Neither Aboriginal nor Torres Strait Islander origin,Identifies as gender nonbinary
+thomson-mika,Patient,female,1964-07-17,THOMSON,Mika,official,0870106164,0491573087,0870101470,75 Ida Rd,Bulyee,WA,6306,AU,8003608000311647,69518250611,Torres Strait Islander but not Aboriginal origin,
+todd-tanya-estelle,Patient,female,1993-09-01,TODD,Tanya ESTELLE,official,0870101712,0491572549,0870102682,193 Farmer Rd,Nguiu,NT,0822,AU,8003608333647188,49516518511,Neither Aboriginal nor Torres Strait Islander origin,Asked But Declined
+veitch-beau-bradley,Patient,male,2020-10-09,VEITCH,Beau BRADLEY,official,0870106485,,,78 Innovation Cct,Newcastle Waters,NT,0862,AU,8003608500314828,49516522814,Both Aboriginal and Torres Strait Islander origin,
+veitch-miles-dudley,Patient,male,1994-04-10,VEITCH,Miles DUDLEY,official,0870106485,0491573770,0870105678,78 Innovation Cct,Newcastle Waters,NT,0862,AU,8003608000311795,49516522811,Torres Strait Islander but not Aboriginal origin,
+veitch-mitchell-carl,Patient,male,2019-12-15,VEITCH,Mitchell CARL,official,0870106485,,,78 Innovation Cct,Newcastle Waters,NT,0862,AU,8003608833648512,49516522813,Not stated/inadequately described,
+veitch-nathan-chris,Patient,male,2022-06-01,VEITCH,Nathan CHRIS,official,0870106485,,,78 Innovation Cct,Newcastle Waters,NT,0862,AU,8003608166980458,49516522815,Not stated/inadequately described,Identifies as female gender (finding)
+veitch-savannah-sheena,Patient,female,2018-12-11,VEITCH,Savannah SHEENA,official,0870106485,,,78 Innovation Cct,Newcastle Waters,NT,0862,AU,8003608833648504,49516522812,Not stated/inadequately described,Not Asked
+wang-li,Patient,male,1975-05-03,Wang,Li,,,,,29 Gadsby Street,Blacktown,NSW,2148,AU,,,Neither Aboriginal nor Torres Strait Islander origin,

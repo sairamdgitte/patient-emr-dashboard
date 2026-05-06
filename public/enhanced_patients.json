@@ -1,0 +1,168 @@
+[
+ 
+  {
+    "id": 2,
+    "name": "Amira Singh",
+    "Gender": "Female",
+    "D.O.B": "1990-11-03",
+    "allergies": ["penicillin"],
+    "conditions": ["hypertension", "type-2-diabetes"],
+    "medications": ["active-metformin", "active-amlodipine", "completed-lisinopril"],
+    "observations": [
+      { "type": "Blood pressure panel with all children optional", "value": "142/91", "unit": "mmHg", "reference_range": "<120/80", "date": "2020-03-12", "medication_context": "active-amlodipine" },
+      { "type": "Heart rate", "value": "80", "unit": "bpm", "reference_range": "60-100", "date": "2020-03-12", "medication_context": "active-amlodipine" },
+      { "type": "Blood Glucose", "value": "7.2", "unit": "mmol/L", "reference_range": "4.0-6.0", "date": "2020-03-12", "medication_context": "active-metformin" },
+      { "type": "HbA1c", "value": "6.8", "unit": "%", "reference_range": "<6.5", "date": "2020-03-12", "medication_context": "active-metformin" },
+      { "type": "Body weight", "value": "72", "unit": "kg", "reference_range": "", "date": "2020-03-12", "medication_context": "active-metformin" },
+      { "type": "Blood pressure panel with all children optional", "value": "136/86", "unit": "mmHg", "reference_range": "<120/80", "date": "2021-08-19", "medication_context": "active-amlodipine" },
+      { "type": "Blood Glucose", "value": "6.5", "unit": "mmol/L", "reference_range": "4.0-6.0", "date": "2021-08-19", "medication_context": "active-metformin" },
+      { "type": "HbA1c", "value": "6.3", "unit": "%", "reference_range": "<6.5", "date": "2021-08-19", "medication_context": "active-metformin" },
+      { "type": "Oxygen saturation in Arterial blood by Pulse oximetry", "value": "97", "unit": "%", "reference_range": "95-100", "date": "2021-08-19", "medication_context": "active-amlodipine" },
+      { "type": "Respiratory rate", "value": "17", "unit": "breaths/min", "reference_range": "12-20", "date": "2021-08-19", "medication_context": "active-amlodipine" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Carlos Mendoza",
+    "Gender": "Male",
+    "D.O.B": "1972-07-18",
+    "allergies": ["aspirin", "sulfonamides"],
+    "conditions": ["coronary-artery-disease", "hyperlipidaemia"],
+    "medications": ["active-rosuvastatin", "active-clopidogrel", "previous-use-warfarin"],
+    "observations": [
+      { "type": "Cholesterol [Moles/volume] in Serum or Plasma", "value": "5.8", "unit": "mmol/L", "reference_range": "3.0-5.2", "date": "2019-05-20", "medication_context": "active-rosuvastatin" },
+      { "type": "Cholesterol in LDL [Moles/volume] in Serum or Plasma", "value": "3.6", "unit": "mmol/L", "reference_range": "<3.0", "date": "2019-05-20", "medication_context": "active-rosuvastatin" },
+      { "type": "Cholesterol in HDL [Moles/volume] in Serum or Plasma", "value": "1.1", "unit": "mmol/L", "reference_range": ">1.0", "date": "2019-05-20", "medication_context": "active-rosuvastatin" },
+      { "type": "Triglyceride [Moles/volume] in Serum or Plasma", "value": "2.1", "unit": "mmol/L", "reference_range": "<1.7", "date": "2019-05-20", "medication_context": "active-rosuvastatin" },
+      { "type": "Heart rate", "value": "65", "unit": "bpm", "reference_range": "60-100", "date": "2019-05-20", "medication_context": "active-clopidogrel" },
+      { "type": "Blood pressure panel with all children optional", "value": "145/92", "unit": "mmHg", "reference_range": "<120/80", "date": "2019-05-20", "medication_context": "active-clopidogrel" },
+      { "type": "Cholesterol [Moles/volume] in Serum or Plasma", "value": "4.9", "unit": "mmol/L", "reference_range": "3.0-5.2", "date": "2022-01-14", "medication_context": "active-rosuvastatin" },
+      { "type": "Cholesterol in LDL [Moles/volume] in Serum or Plasma", "value": "2.7", "unit": "mmol/L", "reference_range": "<3.0", "date": "2022-01-14", "medication_context": "active-rosuvastatin" },
+      { "type": "Heart rate", "value": "62", "unit": "bpm", "reference_range": "60-100", "date": "2022-01-14", "medication_context": "active-clopidogrel" },
+      { "type": "Blood pressure panel with all children optional", "value": "138/88", "unit": "mmHg", "reference_range": "<120/80", "date": "2022-01-14", "medication_context": "active-clopidogrel" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Elena Petrova",
+    "Gender": "Female",
+    "D.O.B": "1965-02-28",
+    "allergies": ["latex", "iodine"],
+    "conditions": ["osteoporosis", "hypothyroidism"],
+    "medications": ["active-levothyroxine", "active-alendronate", "completed-calcium-carbonate"],
+    "observations": [
+      { "type": "Thyroid stimulating hormone", "value": "5.8", "unit": "mIU/L", "reference_range": "0.4-4.0", "date": "2019-09-11", "medication_context": "active-levothyroxine" },
+      { "type": "Body weight", "value": "65", "unit": "kg", "reference_range": "", "date": "2019-09-11", "medication_context": "active-levothyroxine" },
+      { "type": "Body height", "value": "162", "unit": "cm", "reference_range": "", "date": "2019-09-11", "medication_context": "active-levothyroxine" },
+      { "type": "Heart rate", "value": "58", "unit": "bpm", "reference_range": "60-100", "date": "2019-09-11", "medication_context": "active-levothyroxine" },
+      { "type": "Calcium [Moles/volume] in Serum or Plasma", "value": "2.1", "unit": "mmol/L", "reference_range": "2.2-2.6", "date": "2019-09-11", "medication_context": "active-alendronate" },
+      { "type": "Thyroid stimulating hormone", "value": "3.2", "unit": "mIU/L", "reference_range": "0.4-4.0", "date": "2021-04-07", "medication_context": "active-levothyroxine" },
+      { "type": "Heart rate", "value": "66", "unit": "bpm", "reference_range": "60-100", "date": "2021-04-07", "medication_context": "active-levothyroxine" },
+      { "type": "Calcium [Moles/volume] in Serum or Plasma", "value": "2.3", "unit": "mmol/L", "reference_range": "2.2-2.6", "date": "2021-04-07", "medication_context": "active-alendronate" },
+      { "type": "Oxygen saturation in Arterial blood by Pulse oximetry", "value": "96", "unit": "%", "reference_range": "95-100", "date": "2021-04-07", "medication_context": "active-levothyroxine" },
+      { "type": "Respiratory rate", "value": "14", "unit": "breaths/min", "reference_range": "12-20", "date": "2021-04-07", "medication_context": "active-levothyroxine" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Kwame Boateng",
+    "Gender": "Male",
+    "D.O.B": "1983-09-05",
+    "allergies": ["codeine"],
+    "conditions": ["asthma", "allergic-rhinitis"],
+    "medications": ["active-salbutamol", "active-fluticasone", "previous-use-montelukast"],
+    "observations": [
+      { "type": "Oxygen saturation in Arterial blood by Pulse oximetry", "value": "94", "unit": "%", "reference_range": "95-100", "date": "2020-06-03", "medication_context": "active-salbutamol" },
+      { "type": "Respiratory rate", "value": "22", "unit": "breaths/min", "reference_range": "12-20", "date": "2020-06-03", "medication_context": "active-salbutamol" },
+      { "type": "Heart rate", "value": "90", "unit": "bpm", "reference_range": "60-100", "date": "2020-06-03", "medication_context": "active-salbutamol" },
+      { "type": "Peak expiratory flow rate", "value": "380", "unit": "L/min", "reference_range": ">450", "date": "2020-06-03", "medication_context": "active-fluticasone" },
+      { "type": "Body weight", "value": "85", "unit": "kg", "reference_range": "", "date": "2020-06-03", "medication_context": "active-salbutamol" },
+      { "type": "Oxygen saturation in Arterial blood by Pulse oximetry", "value": "97", "unit": "%", "reference_range": "95-100", "date": "2022-03-18", "medication_context": "active-salbutamol" },
+      { "type": "Respiratory rate", "value": "17", "unit": "breaths/min", "reference_range": "12-20", "date": "2022-03-18", "medication_context": "active-salbutamol" },
+      { "type": "Peak expiratory flow rate", "value": "460", "unit": "L/min", "reference_range": ">450", "date": "2022-03-18", "medication_context": "active-fluticasone" },
+      { "type": "Heart rate", "value": "74", "unit": "bpm", "reference_range": "60-100", "date": "2022-03-18", "medication_context": "active-salbutamol" }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Linh Tran",
+    "Gender": "Female",
+    "D.O.B": "1995-04-12",
+    "allergies": [],
+    "conditions": ["anxiety", "iron-deficiency-anaemia"],
+    "medications": ["active-sertraline", "active-ferrous-sulfate", "completed-escitalopram"],
+    "observations": [
+      { "type": "Haemoglobin [Mass/volume] in Blood", "value": "98", "unit": "g/L", "reference_range": "120-160", "date": "2021-01-22", "medication_context": "active-ferrous-sulfate" },
+      { "type": "Heart rate", "value": "88", "unit": "bpm", "reference_range": "60-100", "date": "2021-01-22", "medication_context": "active-sertraline" },
+      { "type": "Body weight", "value": "55", "unit": "kg", "reference_range": "", "date": "2021-01-22", "medication_context": "active-sertraline" },
+      { "type": "Respiratory rate", "value": "18", "unit": "breaths/min", "reference_range": "12-20", "date": "2021-01-22", "medication_context": "active-sertraline" },
+      { "type": "Oxygen saturation in Arterial blood by Pulse oximetry", "value": "96", "unit": "%", "reference_range": "95-100", "date": "2021-01-22", "medication_context": "active-ferrous-sulfate" },
+      { "type": "Haemoglobin [Mass/volume] in Blood", "value": "118", "unit": "g/L", "reference_range": "120-160", "date": "2022-06-30", "medication_context": "active-ferrous-sulfate" },
+      { "type": "Heart rate", "value": "76", "unit": "bpm", "reference_range": "60-100", "date": "2022-06-30", "medication_context": "active-sertraline" },
+      { "type": "Oxygen saturation in Arterial blood by Pulse oximetry", "value": "98", "unit": "%", "reference_range": "95-100", "date": "2022-06-30", "medication_context": "active-ferrous-sulfate" },
+      { "type": "Respiratory rate", "value": "15", "unit": "breaths/min", "reference_range": "12-20", "date": "2022-06-30", "medication_context": "active-sertraline" }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Noah Johnson",
+    "Gender": "Male",
+    "D.O.B": "1960-12-01",
+    "allergies": ["sulfonamides"],
+    "conditions": ["chronic-kidney-disease", "hypertension", "gout"],
+    "medications": ["active-ramipril", "active-febuxostat", "completed-allopurinol"],
+    "observations": [
+      { "type": "Creatinine [Moles/volume] in Serum or Plasma", "value": "185", "unit": "umol/L", "reference_range": "60-110", "date": "2019-11-08", "medication_context": "active-ramipril" },
+      { "type": "Blood pressure panel with all children optional", "value": "152/96", "unit": "mmHg", "reference_range": "<120/80", "date": "2019-11-08", "medication_context": "active-ramipril" },
+      { "type": "Heart rate", "value": "74", "unit": "bpm", "reference_range": "60-100", "date": "2019-11-08", "medication_context": "active-ramipril" },
+      { "type": "Urate [Moles/volume] in Serum or Plasma", "value": "520", "unit": "umol/L", "reference_range": "<360", "date": "2019-11-08", "medication_context": "active-febuxostat" },
+      { "type": "Body weight", "value": "92", "unit": "kg", "reference_range": "", "date": "2019-11-08", "medication_context": "active-ramipril" },
+      { "type": "Creatinine [Moles/volume] in Serum or Plasma", "value": "162", "unit": "umol/L", "reference_range": "60-110", "date": "2022-05-17", "medication_context": "active-ramipril" },
+      { "type": "Blood pressure panel with all children optional", "value": "138/88", "unit": "mmHg", "reference_range": "<120/80", "date": "2022-05-17", "medication_context": "active-ramipril" },
+      { "type": "Urate [Moles/volume] in Serum or Plasma", "value": "340", "unit": "umol/L", "reference_range": "<360", "date": "2022-05-17", "medication_context": "active-febuxostat" },
+      { "type": "Heart rate", "value": "70", "unit": "bpm", "reference_range": "60-100", "date": "2022-05-17", "medication_context": "active-ramipril" },
+      { "type": "Oxygen saturation in Arterial blood by Pulse oximetry", "value": "96", "unit": "%", "reference_range": "95-100", "date": "2022-05-17", "medication_context": "active-ramipril" }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Ravi Patel",
+    "Gender": "Male",
+    "D.O.B": "1988-08-25",
+    "allergies": ["penicillin", "peanuts"],
+    "conditions": ["type-1-diabetes", "coeliac-disease"],
+    "medications": ["active-insulin-glargine", "active-insulin-aspart", "previous-use-metoclopramide"],
+    "observations": [
+      { "type": "Blood Glucose", "value": "11.4", "unit": "mmol/L", "reference_range": "4.0-6.0", "date": "2020-10-05", "medication_context": "active-insulin-glargine" },
+      { "type": "HbA1c", "value": "8.2", "unit": "%", "reference_range": "<6.5", "date": "2020-10-05", "medication_context": "active-insulin-glargine" },
+      { "type": "Body weight", "value": "78", "unit": "kg", "reference_range": "", "date": "2020-10-05", "medication_context": "active-insulin-glargine" },
+      { "type": "Heart rate", "value": "82", "unit": "bpm", "reference_range": "60-100", "date": "2020-10-05", "medication_context": "active-insulin-glargine" },
+      { "type": "Oxygen saturation in Arterial blood by Pulse oximetry", "value": "98", "unit": "%", "reference_range": "95-100", "date": "2020-10-05", "medication_context": "active-insulin-glargine" },
+      { "type": "Blood Glucose", "value": "7.6", "unit": "mmol/L", "reference_range": "4.0-6.0", "date": "2022-02-28", "medication_context": "active-insulin-aspart" },
+      { "type": "HbA1c", "value": "7.1", "unit": "%", "reference_range": "<6.5", "date": "2022-02-28", "medication_context": "active-insulin-aspart" },
+      { "type": "Heart rate", "value": "76", "unit": "bpm", "reference_range": "60-100", "date": "2022-02-28", "medication_context": "active-insulin-aspart" },
+      { "type": "Respiratory rate", "value": "16", "unit": "breaths/min", "reference_range": "12-20", "date": "2022-02-28", "medication_context": "active-insulin-aspart" }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Yasmin Farah",
+    "Gender": "Female",
+    "D.O.B": "1975-05-30",
+    "allergies": ["erythromycin"],
+    "conditions": ["rheumatoid-arthritis", "depression"],
+    "medications": ["active-methotrexate", "active-hydroxychloroquine", "active-duloxetine"],
+    "observations": [
+      { "type": "C-reactive protein", "value": "28", "unit": "mg/L", "reference_range": "<10", "date": "2020-08-14", "medication_context": "active-methotrexate" },
+      { "type": "Heart rate", "value": "86", "unit": "bpm", "reference_range": "60-100", "date": "2020-08-14", "medication_context": "active-methotrexate" },
+      { "type": "Body weight", "value": "68", "unit": "kg", "reference_range": "", "date": "2020-08-14", "medication_context": "active-methotrexate" },
+      { "type": "Alanine aminotransferase", "value": "42", "unit": "U/L", "reference_range": "7-35", "date": "2020-08-14", "medication_context": "active-methotrexate" },
+      { "type": "Oxygen saturation in Arterial blood by Pulse oximetry", "value": "97", "unit": "%", "reference_range": "95-100", "date": "2020-08-14", "medication_context": "active-methotrexate" },
+      { "type": "C-reactive protein", "value": "12", "unit": "mg/L", "reference_range": "<10", "date": "2022-04-09", "medication_context": "active-hydroxychloroquine" },
+      { "type": "Heart rate", "value": "78", "unit": "bpm", "reference_range": "60-100", "date": "2022-04-09", "medication_context": "active-hydroxychloroquine" },
+      { "type": "Alanine aminotransferase", "value": "28", "unit": "U/L", "reference_range": "7-35", "date": "2022-04-09", "medication_context": "active-methotrexate" },
+      { "type": "Respiratory rate", "value": "15", "unit": "breaths/min", "reference_range": "12-20", "date": "2022-04-09", "medication_context": "active-duloxetine" },
+      { "type": "Blood pressure panel with all children optional", "value": "122/78", "unit": "mmHg", "reference_range": "<120/80", "date": "2022-04-09", "medication_context": "active-duloxetine" }
+    ]
+  }
+]
