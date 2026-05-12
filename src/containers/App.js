@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Header, Sidebar, Footer } from '../components/Shell';
 import Worklist from '../components/Worklist';
 import PatientView from '../components/PatientView';
-import { enrichPatients } from '../components/data';
+import AdmitPatientModal from '../components/AdmitPatientModal';
+import { enrichPatients, enrichSinglePatient } from '../components/data';
 import './App.css';
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
       active: 'worklist',
       selectedId: null,
       loading: true,
+      showAdmit: false,
     };
   }
 
@@ -47,8 +49,17 @@ class App extends Component {
     if (key === 'worklist') this.setState({ view: 'worklist' });
   };
 
+  handleAdmitPatient = (newRawPatient) => {
+    const enriched = enrichSinglePatient(newRawPatient, this.state.patients.length);
+    this.setState(prev => ({
+      patients: [enriched, ...prev.patients], // Add to top of list
+      showAdmit: false,
+      selectedId: enriched.id,
+    }));
+  };
+
   render() {
-    const { patients, view, active, selectedId, loading } = this.state;
+    const { patients, view, active, selectedId, loading, showAdmit } = this.state;
     const selected = patients.find(p => p.id === selectedId) || patients[0];
     const breadcrumbs = view === 'worklist'
       ? ['Ward 7B', 'My Patients']
@@ -76,6 +87,7 @@ class App extends Component {
               selectedId={selectedId}
               onSelect={(id) => this.setState({ selectedId: id })}
               onOpen={this.openPatient}
+              onAdmit={() => this.setState({ showAdmit: true })}
             />
           )}
           {view === 'patient' && selected && (
@@ -83,6 +95,13 @@ class App extends Component {
           )}
         </main>
         <Footer />
+
+        {showAdmit && (
+          <AdmitPatientModal
+            onClose={() => this.setState({ showAdmit: false })}
+            onAdmit={this.handleAdmitPatient}
+          />
+        )}
       </div>
     );
   }
