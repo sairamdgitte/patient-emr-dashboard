@@ -8,6 +8,13 @@ export const CONDITION_LABEL = {
   'chronic-kidney-disease': 'Chronic kidney disease', 'gout': 'Gout',
   'coeliac-disease': 'Coeliac disease', 'rheumatoid-arthritis': 'Rheumatoid arthritis',
   'depression': 'Depression',
+  'acute-coronary-syndrome': 'Acute coronary syndrome',
+  'pneumonia': 'Pneumonia',
+  'copd': 'COPD',
+  'heart-failure': 'Heart failure',
+  'atrial-fibrillation': 'Atrial fibrillation',
+  'sepsis': 'Sepsis',
+  'stroke': 'Stroke',
 };
 
 export const medLabel = (m) => {
@@ -42,6 +49,7 @@ export const inRange = (v, range) => {
 };
 
 export const computeStatus = (p) => {
+  if (!p.observations || p.observations.length === 0) return 'watch';
   const dates = [...new Set(p.observations.map(o => o.date))].sort();
   const latest = p.observations.filter(o => o.date === dates[dates.length - 1]);
   let outOf = 0, severe = 0;
@@ -108,9 +116,28 @@ export const enrichPatients = (raw) => {
       ward: w.ward, room: w.room, bed: w.bed, attending: w.att,
       los: (i % 5) + 1,
       reason: REASONS[p.name] || p.conditions[0],
-      updated: UPDATED[i],
+      updated: UPDATED[i % UPDATED.length],
     };
   });
+};
+
+// Enrich a single newly admitted patient
+export const enrichSinglePatient = (rawPatient, index) => {
+  return {
+    ...rawPatient,
+    age: calcAge(rawPatient['D.O.B']),
+    sex: rawPatient.Gender === 'Female' ? 'F' : 'M',
+    photo: null, // No photo for new patients — avatar will show initials
+    mrn: `${(9000 + rawPatient.id % 1000).toString().slice(0, 4)}-${(3000 + rawPatient.id % 1000).toString().slice(0, 4)}`,
+    status: computeStatus(rawPatient),
+    ward: rawPatient._ward || 'Medical 7B',
+    room: rawPatient._room || `7B-${10 + index}`,
+    bed: rawPatient._bed || 'A',
+    attending: rawPatient._attending || 'Dr. R. Patel',
+    los: 1, // Just admitted today
+    reason: rawPatient._reason || rawPatient.conditions[0] || 'New admission',
+    updated: 'now',
+  };
 };
 
 // Webhook URLs

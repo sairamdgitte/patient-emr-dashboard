@@ -32,7 +32,7 @@ const Sparkline = ({ values, color = 'var(--text)' }) => {
   return <svg width={w} height={h} style={{ display: 'block' }}><polyline points={pts} fill="none" stroke={color} strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" /></svg>;
 };
 
-const Worklist = ({ patients, selectedId, onSelect, onOpen }) => {
+const Worklist = ({ patients, selectedId, onSelect, onOpen, onAdmit }) => {
   const [filter, setFilter] = useState('all');
   const [query, setQuery] = useState('');
   const [sort, setSort] = useState('priority');
@@ -57,7 +57,7 @@ const Worklist = ({ patients, selectedId, onSelect, onOpen }) => {
         <div className="page-hd__actions">
           <button className="btn"><Ic.Filter />Filter</button>
           <button className="btn"><Ic.Download />Export</button>
-          <button className="btn btn--primary"><Ic.Plus />Admit patient</button>
+          <button className="btn btn--primary" onClick={onAdmit}><Ic.Plus />Admit patient</button>
         </div>
       </div>
 
