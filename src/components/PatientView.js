@@ -271,7 +271,7 @@ const PatientView = ({ p, onBack }) => {
 
             <Section title="Lab integrations" dense>
               <div style={{ fontSize: 11.5, color: 'var(--text-3)', lineHeight: 1.5 }}>
-                Connected to <b style={{ color: 'var(--text-2)' }}>NIIN Health Alliance</b> sandbox · Cisco distributed infrastructure · ML observations triaged via HTL pipelines.
+                Delivery partnership with <b style={{ color: 'var(--text-2)' }}>NIIN Health Alliance</b> · Cisco distributed infrastructure · HTL Sandbox.
               </div>
             </Section>
           </div>
