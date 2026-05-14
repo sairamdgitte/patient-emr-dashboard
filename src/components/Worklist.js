@@ -32,7 +32,7 @@ const Sparkline = ({ values, color = 'var(--text)' }) => {
   return <svg width={w} height={h} style={{ display: 'block' }}><polyline points={pts} fill="none" stroke={color} strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" /></svg>;
 };
 
-const Worklist = ({ patients, selectedId, onSelect, onOpen, onAdmit }) => {
+const Worklist = ({ patients, selectedId, onSelect, onOpen, onAdmit, onDelete }) => {
   const [filter, setFilter] = useState('all');
   const [query, setQuery] = useState('');
   const [sort, setSort] = useState('priority');
