@@ -52,10 +52,23 @@ class App extends Component {
   handleAdmitPatient = (newRawPatient) => {
     const enriched = enrichSinglePatient(newRawPatient, this.state.patients.length);
     this.setState(prev => ({
-      patients: [enriched, ...prev.patients], // Add to top of list
+      patients: [enriched, ...prev.patients],
       showAdmit: false,
       selectedId: enriched.id,
     }));
+  };
+
+  handleDeletePatient = (id) => {
+    this.setState(prev => {
+      const updated = prev.patients.filter(p => p.id !== id);
+      return {
+        patients: updated,
+        // If we deleted the selected patient, select the first one
+        selectedId: prev.selectedId === id ? (updated[0]?.id || null) : prev.selectedId,
+        // If we were viewing the deleted patient, go back to worklist
+        view: prev.selectedId === id && prev.view === 'patient' ? 'worklist' : prev.view,
+      };
+    });
   };
 
   render() {
@@ -88,6 +101,7 @@ class App extends Component {
               onSelect={(id) => this.setState({ selectedId: id })}
               onOpen={this.openPatient}
               onAdmit={() => this.setState({ showAdmit: true })}
+              onDelete={this.handleDeletePatient}
             />
           )}
           {view === 'patient' && selected && (
