@@ -73,6 +73,51 @@ export const computeStatus = (p) => {
   return 'stable';
 };
 
+// ============================================
+// Australian IHI (Individual Healthcare Identifier)
+// Format: 16 digits, prefix 8003 60, last digit is Luhn check
+// ============================================
+const luhnCheckDigit = (partial) => {
+  // partial is a string of 15 digits; returns the check digit (0-9)
+  const digits = partial.split('').map(Number).reverse();
+  let sum = 0;
+  for (let i = 0; i < digits.length; i++) {
+    let d = digits[i];
+    if (i % 2 === 0) {
+      d *= 2;
+      if (d > 9) d -= 9;
+    }
+    sum += d;
+  }
+  return (10 - (sum % 10)) % 10;
+};
+
+const generateIHI = (seed) => {
+  // Prefix: 8003 60 (standard IHI issuer ID)
+  // Next 9 digits: deterministic from seed for consistency
+  const base = Math.abs(seed * 7919 + 123456789) % 1000000000;
+  const partial = '800360' + base.toString().padStart(9, '0');
+  const check = luhnCheckDigit(partial);
+  return partial + check;
+};
+
+// Format IHI for display: 8003 6000 0000 0000
+const formatIHI = (ihi) => {
+  return ihi.replace(/(\d{4})(\d{4})(\d{4})(\d{4})/, '$1 $2 $3 $4');
+};
+
+// Pre-assigned IHI numbers for existing patients (deterministic, format-valid)
+const IHI_MAP = {
+  2: generateIHI(2),   // Amira Singh
+  3: generateIHI(3),   // Carlos Mendoza
+  4: generateIHI(4),   // Elena Petrova
+  5: generateIHI(5),   // Kwame Boateng
+  6: generateIHI(6),   // Linh Tran
+  7: generateIHI(7),   // Noah Johnson
+  8: generateIHI(8),   // Ravi Patel
+  9: generateIHI(9),   // Yasmin Farah
+};
+
 export const PHOTO_MAP = {
   2: 'amira-singh', 3: 'Carlos-Mendoza', 4: 'Elena-Petrova',
   5: 'Kwame-Boateng', 6: 'Linh-Tran', 7: 'Noah-Johnson',
@@ -111,7 +156,8 @@ export const enrichPatients = (raw) => {
       age: calcAge(p['D.O.B']),
       sex: p.Gender === 'Female' ? 'F' : 'M',
       photo: PHOTO_MAP[p.id],
-      mrn: `${(8000 + p.id * 137).toString().slice(0, 4)}-${(2000 + p.id * 911).toString().slice(0, 4)}`,
+      ihi: IHI_MAP[p.id] || generateIHI(p.id),
+      ihiFormatted: formatIHI(IHI_MAP[p.id] || generateIHI(p.id)),
       status: computeStatus(p),
       ward: w.ward, room: w.room, bed: w.bed, attending: w.att,
       los: (i % 5) + 1,
@@ -123,18 +169,20 @@ export const enrichPatients = (raw) => {
 
 // Enrich a single newly admitted patient
 export const enrichSinglePatient = (rawPatient, index) => {
+  const ihi = generateIHI(rawPatient.id);
   return {
     ...rawPatient,
     age: calcAge(rawPatient['D.O.B']),
     sex: rawPatient.Gender === 'Female' ? 'F' : 'M',
-    photo: null, // No photo for new patients — avatar will show initials
-    mrn: `${(9000 + rawPatient.id % 1000).toString().slice(0, 4)}-${(3000 + rawPatient.id % 1000).toString().slice(0, 4)}`,
+    photo: null,
+    ihi: ihi,
+    ihiFormatted: formatIHI(ihi),
     status: computeStatus(rawPatient),
     ward: rawPatient._ward || 'Medical 7B',
     room: rawPatient._room || `7B-${10 + index}`,
     bed: rawPatient._bed || 'A',
     attending: rawPatient._attending || 'Dr. R. Patel',
-    los: 1, // Just admitted today
+    los: 1,
     reason: rawPatient._reason || rawPatient.conditions[0] || 'New admission',
     updated: 'now',
   };
