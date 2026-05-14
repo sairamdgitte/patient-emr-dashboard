@@ -32,7 +32,7 @@ const Sparkline = ({ values, color = 'var(--text)' }) => {
   return <svg width={w} height={h} style={{ display: 'block' }}><polyline points={pts} fill="none" stroke={color} strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" /></svg>;
 };
 
-const Worklist = ({ patients, selectedId, onSelect, onOpen, onAdmit }) => {
+const Worklist = ({ patients, selectedId, onSelect, onOpen, onAdmit, onDelete }) => {
   const [filter, setFilter] = useState('all');
   const [query, setQuery] = useState('');
   const [sort, setSort] = useState('priority');
@@ -88,13 +88,21 @@ const Worklist = ({ patients, selectedId, onSelect, onOpen, onAdmit }) => {
             <tbody>
               {filtered.map((p, i) => (
                 <tr key={p.id} onClick={() => onSelect(p.id)} onDoubleClick={() => onOpen(p.id)}
-                  style={{ cursor: 'default', borderBottom: i < filtered.length - 1 ? '1px solid var(--line-soft)' : '0', background: selectedId === p.id ? 'var(--niin-teal-soft)' : 'transparent', position: 'relative' }}>
+                  style={{
+                    cursor: 'default',
+                    borderBottom: i < filtered.length - 1 ? '1px solid var(--line-soft)' : '0',
+                    background: selectedId === p.id ? 'var(--niin-teal-soft)' : p._isNew ? 'rgba(69, 184, 153, 0.06)' : 'transparent',
+                    position: 'relative',
+                  }}>
                   <td style={{ padding: '10px 14px', position: 'relative' }}>
                     <span style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 3, background: p.status === 'critical' ? 'var(--crit)' : p.status === 'watch' ? 'var(--warn)' : 'transparent' }} />
                     <div className="row" style={{ gap: 10 }}>
                       <Avatar p={p} size={36} />
                       <div>
-                        <div style={{ fontWeight: 600 }}>{p.name}</div>
+                        <div style={{ fontWeight: 600, display: 'flex', alignItems: 'center', gap: 6 }}>
+                          {p.name}
+                          {p._isNew && <span className="tag tag--ok" style={{ fontSize: 9, padding: '0 5px' }}>NEW</span>}
+                        </div>
                         <div className="mono" style={{ fontSize: 11, color: 'var(--text-3)' }}>MRN {p.mrn} · {p.age}{p.sex}</div>
                       </div>
                     </div>
@@ -116,9 +124,21 @@ const Worklist = ({ patients, selectedId, onSelect, onOpen, onAdmit }) => {
                   <td style={{ padding: '10px 14px', color: 'var(--text-2)', fontSize: 12.5 }}>{p.attending}</td>
                   <td style={{ padding: '10px 14px', color: 'var(--text-3)' }} className="mono">{p.updated} ago</td>
                   <td style={{ padding: '10px 8px' }}>
-                    <button className="icon-btn" style={{ width: 28, height: 28 }} onClick={(e) => { e.stopPropagation(); onOpen(p.id); }}>
-                      <Ic.ChevronRight size={14} />
-                    </button>
+                    <div className="row" style={{ gap: 2 }}>
+                      {p._isNew && (
+                        <button
+                          className="icon-btn"
+                          style={{ width: 28, height: 28, color: 'var(--crit)' }}
+                          title="Remove patient"
+                          onClick={(e) => { e.stopPropagation(); onDelete(p.id); }}
+                        >
+                          <Ic.X size={14} />
+                        </button>
+                      )}
+                      <button className="icon-btn" style={{ width: 28, height: 28 }} onClick={(e) => { e.stopPropagation(); onOpen(p.id); }}>
+                        <Ic.ChevronRight size={14} />
+                      </button>
+                    </div>
                   </td>
                 </tr>
               ))}
