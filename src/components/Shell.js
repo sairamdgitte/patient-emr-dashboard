@@ -31,7 +31,7 @@ export const Header = ({ breadcrumbs, notifs }) => (
       <div style={{ flex: 1 }} />
       <div className="hd__search">
         <Ic.Search size={14} />
-        <span>Search patients, MRN, orders…</span>
+        <span>Search patients, IHI, orders…</span>
         <kbd>⌘K</kbd>
       </div>
       <div className="hd__actions">
