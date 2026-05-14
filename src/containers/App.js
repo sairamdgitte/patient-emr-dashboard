@@ -63,9 +63,7 @@ class App extends Component {
       const updated = prev.patients.filter(p => p.id !== id);
       return {
         patients: updated,
-        // If we deleted the selected patient, select the first one
         selectedId: prev.selectedId === id ? (updated[0]?.id || null) : prev.selectedId,
-        // If we were viewing the deleted patient, go back to worklist
         view: prev.selectedId === id && prev.view === 'patient' ? 'worklist' : prev.view,
       };
     });
