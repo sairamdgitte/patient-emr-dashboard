@@ -116,7 +116,7 @@ const PatientView = ({ p, onBack }) => {
               {p.allergies.map(a => (<span key={a} className="tag tag--crit"><Ic.Alert size={11} />Allergy: {a}</span>))}
             </div>
             <div style={{ fontSize: 13, color: 'var(--text-3)', display: 'flex', gap: 18, flexWrap: 'wrap' }}>
-              <span className="mono">MRN {p.mrn}</span>
+              <span className="mono">IHI {p.ihiFormatted}</span>
               <span>{p.age} yrs · {p.Gender}</span>
               <span>DOB {new Date(p['D.O.B']).toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
               <span>·</span>
@@ -271,7 +271,7 @@ const PatientView = ({ p, onBack }) => {
 
             <Section title="Lab integrations" dense>
               <div style={{ fontSize: 11.5, color: 'var(--text-3)', lineHeight: 1.5 }}>
-                Delivery partnership with <b style={{ color: 'var(--text-2)' }}>NIIN Health Alliance</b> · Cisco distributed infrastructure · HTL Sandbox.
+                Connected to <b style={{ color: 'var(--text-2)' }}>NIIN Health Alliance</b> sandbox · Cisco distributed infrastructure · ML observations triaged via HTL pipelines.
               </div>
             </Section>
           </div>
