@@ -38,3 +38,4 @@ export const Mail = (p) => <I {...p}><rect x="2" y="4" width="20" height="16" rx
 export const Check = (p) => <I {...p} d="M20 6 9 17l-5-5" />;
 export const Clock = (p) => <I {...p}><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></I>;
 export const Refresh = (p) => <I {...p}><path d="M21 12a9 9 0 0 1-15.3 6.4L3 16" /><path d="M3 12a9 9 0 0 1 15.3-6.4L21 8" /><path d="M21 3v5h-5" /><path d="M3 21v-5h5" /></I>;
+export const Cube = (p) => <I {...p}><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.7Z" /><path d="m3.3 7 8.7 5 8.7-5" /><path d="M12 22V12" /></I>;

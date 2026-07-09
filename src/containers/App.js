@@ -3,6 +3,7 @@ import { Header, Sidebar, Footer } from '../components/Shell';
 import Worklist from '../components/Worklist';
 import PatientView from '../components/PatientView';
 import AdmitPatientModal from '../components/AdmitPatientModal';
+import DigitalTwin from '../components/twin/DigitalTwin';
 import { enrichPatients, enrichSinglePatient } from '../components/data';
 import './App.css';
 
@@ -47,6 +48,7 @@ class App extends Component {
   handleNavChange = (key) => {
     this.setState({ active: key });
     if (key === 'worklist') this.setState({ view: 'worklist' });
+    if (key === 'twin') this.setState({ view: 'twin' });
   };
 
   handleAdmitPatient = (newRawPatient) => {
@@ -72,9 +74,11 @@ class App extends Component {
   render() {
     const { patients, view, active, selectedId, loading, showAdmit } = this.state;
     const selected = patients.find(p => p.id === selectedId) || patients[0];
-    const breadcrumbs = view === 'worklist'
-      ? ['Ward 7B', 'My Patients']
-      : ['Ward 7B', 'My Patients', selected?.name || ''];
+    const breadcrumbs = view === 'twin'
+      ? ['Ward Block C', 'Digital Twin']
+      : view === 'worklist'
+        ? ['Ward 7B', 'My Patients']
+        : ['Ward 7B', 'My Patients', selected?.name || ''];
 
     if (loading) {
       return (
@@ -105,6 +109,7 @@ class App extends Component {
           {view === 'patient' && selected && (
             <PatientView p={selected} onBack={this.goWorklist} />
           )}
+          {view === 'twin' && <DigitalTwin />}
         </main>
         <Footer />
 

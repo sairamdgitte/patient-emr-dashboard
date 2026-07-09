@@ -74,6 +74,7 @@ export const Sidebar = ({ active, onChange, counts }) => (
     <NavItem icon={Ic.Flask} label="Results" count={12} active={active === 'results'} onClick={() => onChange('results')} />
     <NavItem icon={Ic.Edit} label="Notes" active={active === 'notes'} onClick={() => onChange('notes')} />
     <div className="nv__sect">Lab Tools</div>
+    <NavItem icon={Ic.Cube} label="Digital Twin" active={active === 'twin'} onClick={() => onChange('twin')} />
     <NavItem icon={Ic.Activity} label="Insights" active={active === 'insights'} onClick={() => onChange('insights')} />
     <NavItem icon={Ic.Phone} label="Webex Connect" active={active === 'webex'} onClick={() => onChange('webex')} />
     <div style={{ flex: 1 }} />
