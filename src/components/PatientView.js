@@ -60,9 +60,28 @@ const PatientView = ({ p, onBack }) => {
   const fireIC = async () => {
     setShowIC(true); setIcStatus('Connecting…');
     try {
-      await fetch(WH_IC, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ patientName: p.name, patientMobile: PAT_PHONE, hostMobile: HOST_PHONE }) });
+      const res = await fetch(WH_IC, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ patientName: p.name, patientMobile: PAT_PHONE, hostMobile: HOST_PHONE })
+      });
+      console.log('Instant Connect response:', res.status);
       setIcStatus('Webex Instant Connect initiated! Both parties will receive a connection request.');
-    } catch (e) { setIcStatus('Failed to connect. Try again.'); }
+    } catch (e) {
+      console.warn('Instant Connect CORS fallback, retrying with no-cors...');
+      try {
+        await fetch(WH_IC, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain' },
+          body: JSON.stringify({ patientName: p.name, patientMobile: PAT_PHONE, hostMobile: HOST_PHONE })
+        });
+        setIcStatus('Webex Instant Connect initiated! Both parties will receive a connection request.');
+      } catch (e2) {
+        console.error('Instant Connect failed:', e2);
+        setIcStatus('Failed to connect. Please try again.');
+      }
+    }
   };
 
   const fireAI = async () => {
