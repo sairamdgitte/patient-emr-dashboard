@@ -3,79 +3,16 @@ import * as Ic from './Icons';
 
 const TODAY = new Date().toISOString().split('T')[0];
 
-// Pool of 8 realistic demo patients — rotates each time modal opens
+// Static demo patient — the admit form is always pre-filled with Mondo Kad
 const DEMO_POOL = [
   {
-    name: 'Sophie Chen', gender: 'Female', dob: '1991-06-18',
-    ward: 'Cardiac 5C', room: '5C-06', bed: 'A', attending: 'Dr. S. Lin',
-    reason: 'Acute chest pain · troponin pending',
-    conditions: 'acute-coronary-syndrome, hypertension',
-    allergies: 'morphine, shellfish',
-    medications: 'active-aspirin, active-ticagrelor, active-enoxaparin',
-    obs_bp: '158/94', obs_hr: '102', obs_spo2: '95', obs_rr: '22', obs_temp: '37.4', obs_weight: '64',
-  },
-  {
-    name: 'James Okonkwo', gender: 'Male', dob: '1968-03-22',
-    ward: 'Respiratory 5C', room: '5C-11', bed: 'B', attending: 'Dr. T. Nguyen',
-    reason: 'COPD exacerbation · IV antibiotics',
-    conditions: 'copd, pneumonia',
-    allergies: 'penicillin',
-    medications: 'active-salbutamol, active-prednisolone, active-amoxicillin-clavulanate',
-    obs_bp: '134/82', obs_hr: '94', obs_spo2: '89', obs_rr: '26', obs_temp: '38.2', obs_weight: '81',
-  },
-  {
-    name: 'Maria Gonzalez', gender: 'Female', dob: '1985-11-09',
-    ward: 'Medical 7B', room: '7B-16', bed: 'A', attending: 'Dr. R. Patel',
-    reason: 'New-onset T2DM · DKA workup',
-    conditions: 'type-2-diabetes, hypertension',
-    allergies: 'sulfonamides, iodine',
-    medications: 'active-insulin-glargine, active-metformin, active-ramipril',
-    obs_bp: '148/92', obs_hr: '88', obs_spo2: '97', obs_rr: '18', obs_temp: '36.9', obs_weight: '92',
-  },
-  {
-    name: 'David Park', gender: 'Male', dob: '1955-08-14',
-    ward: 'Renal 4D', room: '4D-05', bed: 'A', attending: 'Dr. T. Nguyen',
-    reason: 'AKI on CKD · fluid management',
-    conditions: 'chronic-kidney-disease, heart-failure',
-    allergies: 'ACE inhibitors',
-    medications: 'active-furosemide, active-bisoprolol, completed-ramipril',
-    obs_bp: '162/98', obs_hr: '68', obs_spo2: '94', obs_rr: '20', obs_temp: '36.5', obs_weight: '88',
-  },
-  {
-    name: 'Aisha Rahman', gender: 'Female', dob: '1978-01-30',
-    ward: 'Rheumatology 6A', room: '6A-07', bed: '-', attending: 'Dr. S. Lin',
-    reason: 'Lupus flare · renal involvement',
-    conditions: 'rheumatoid-arthritis, hypertension',
-    allergies: 'NSAIDs',
-    medications: 'active-hydroxychloroquine, active-mycophenolate, active-prednisolone',
-    obs_bp: '142/88', obs_hr: '82', obs_spo2: '96', obs_rr: '17', obs_temp: '37.6', obs_weight: '62',
-  },
-  {
-    name: 'Thomas Mueller', gender: 'Male', dob: '1972-04-05',
-    ward: 'Cardiac 5C', room: '5C-08', bed: 'B', attending: 'Dr. S. Lin',
-    reason: 'New AF · rate control · anticoagulation',
-    conditions: 'atrial-fibrillation, hyperlipidaemia',
-    allergies: 'contrast dye',
-    medications: 'active-bisoprolol, active-apixaban, active-atorvastatin',
-    obs_bp: '138/86', obs_hr: '112', obs_spo2: '97', obs_rr: '16', obs_temp: '36.7', obs_weight: '95',
-  },
-  {
-    name: 'Priya Sharma', gender: 'Female', dob: '1994-09-25',
-    ward: 'Medical 7B', room: '7B-18', bed: 'A', attending: 'Dr. K. Walsh',
-    reason: 'Severe anaemia · transfusion pending',
-    conditions: 'iron-deficiency-anaemia, anxiety',
+    name: 'Mondo Kad', gender: 'Male', dob: '1945-01-10',
+    ward: 'Cardiac 5C', room: '5C-07', bed: 'A', attending: 'Dr. S. Lin',
+    reason: 'Cardiac arrhythmia · anticoagulation review',
+    conditions: 'cardiac-arrhythmia, arteriosclerosis',
     allergies: '',
-    medications: 'active-ferrous-sulfate, active-sertraline, active-pantoprazole',
-    obs_bp: '104/62', obs_hr: '108', obs_spo2: '98', obs_rr: '19', obs_temp: '36.8', obs_weight: '52',
-  },
-  {
-    name: 'Robert Williams', gender: 'Male', dob: '1960-12-11',
-    ward: 'Endocrine 3A', room: '3A-09', bed: '-', attending: 'Dr. K. Walsh',
-    reason: 'Thyroid storm · ICU step-down',
-    conditions: 'hypothyroidism, osteoporosis',
-    allergies: 'latex, codeine',
-    medications: 'active-levothyroxine, active-propranolol, active-alendronate',
-    obs_bp: '152/90', obs_hr: '118', obs_spo2: '96', obs_rr: '24', obs_temp: '38.6', obs_weight: '76',
+    medications: 'blood thinner',
+    obs_bp: '158/96', obs_hr: '124', obs_spo2: '95', obs_rr: '18', obs_temp: '36.7', obs_height: '180', obs_weight: '90',
   },
 ];
 
@@ -154,6 +91,7 @@ const AdmitPatientModal = ({ onClose, onAdmit }) => {
         form.obs_spo2 && { type: 'SpO₂', value: form.obs_spo2, unit: '%', reference_range: '95-100', date: TODAY },
         form.obs_rr && { type: 'Respiratory rate', value: form.obs_rr, unit: 'breaths/min', reference_range: '12-20', date: TODAY },
         form.obs_temp && { type: 'Temperature', value: form.obs_temp, unit: '°C', reference_range: '36.1-37.2', date: TODAY },
+        form.obs_height && { type: 'Body height', value: form.obs_height, unit: 'cm', reference_range: '', date: TODAY },
         form.obs_weight && { type: 'Body weight', value: form.obs_weight, unit: 'kg', reference_range: '', date: TODAY },
       ].filter(Boolean),
       _ward: form.ward,
@@ -179,7 +117,7 @@ const AdmitPatientModal = ({ onClose, onAdmit }) => {
               Admit new patient
             </h3>
             <div style={{ fontSize: 12.5, color: 'var(--text-3)', marginTop: 4 }}>
-              Pre-filled for demo · a different patient each time
+              Pre-filled for demo · Mondo Kad
             </div>
           </div>
           <button className="icon-btn" onClick={onClose}><Ic.X /></button>
@@ -222,6 +160,7 @@ const AdmitPatientModal = ({ onClose, onAdmit }) => {
             <Field label="SpO₂ (%)" name="obs_spo2" value={form.obs_spo2} onChange={set} placeholder="97" half />
             <Field label="Resp rate (/min)" name="obs_rr" value={form.obs_rr} onChange={set} placeholder="16" half />
             <Field label="Temperature (°C)" name="obs_temp" value={form.obs_temp} onChange={set} placeholder="36.8" half />
+            <Field label="Height (cm)" name="obs_height" value={form.obs_height} onChange={set} placeholder="170" half />
             <Field label="Weight (kg)" name="obs_weight" value={form.obs_weight} onChange={set} placeholder="70" half />
           </div>
         </div>
