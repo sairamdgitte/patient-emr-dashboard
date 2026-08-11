@@ -12,6 +12,7 @@ const DEMO_POOL = [
     conditions: 'cardiac-arrhythmia, arteriosclerosis',
     allergies: '',
     medications: 'blood thinner',
+    medications_actual: 'active-warfarin, active-rosuvastatin', // stored on the patient record
     obs_bp: '158/96', obs_hr: '124', obs_spo2: '95', obs_rr: '18', obs_temp: '36.7', obs_height: '180', obs_weight: '90',
   },
 ];
