@@ -10,7 +10,7 @@ const DEMO_POOL = [
     ward: 'Cardiac 5C', room: '5C-07', bed: 'A', attending: 'Dr. S. Lin',
     reason: 'Cardiac arrhythmia · anticoagulation review',
     conditions: 'cardiac-arrhythmia, arteriosclerosis',
-    allergies: '',
+    allergies: 'none',
     medications: 'blood thinner',                          // shown in the admit form (no drug name)
     medications_actual: 'active-warfarin, active-rosuvastatin', // stored on the patient record
     obs_bp: '158/96', obs_hr: '124', obs_spo2: '95', obs_rr: '18', obs_temp: '36.7', obs_height: '180', obs_weight: '90',
@@ -83,7 +83,10 @@ const AdmitPatientModal = ({ onClose, onAdmit }) => {
       name: form.name,
       Gender: form.gender,
       'D.O.B': form.dob,
-      allergies: form.allergies ? form.allergies.split(',').map(a => a.trim()).filter(Boolean) : [],
+      // "none" (or blank) means no known allergies — don't store it as an allergy tag
+      allergies: form.allergies
+        ? form.allergies.split(',').map(a => a.trim()).filter(a => a && a.toLowerCase() !== 'none')
+        : [],
       conditions: form.conditions ? form.conditions.split(',').map(c => c.trim()).filter(Boolean) : [],
       // Use the real medication names for the record; falls back to the visible field if not set
       medications: (form.medications_actual || form.medications)
