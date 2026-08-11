@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/patient-emr-dashboard/static/css/main.1fdcf581.css",
-    "main.js": "/patient-emr-dashboard/static/js/main.e41bc6bb.js",
+    "main.js": "/patient-emr-dashboard/static/js/main.f33f1ee4.js",
     "index.html": "/patient-emr-dashboard/index.html",
     "main.1fdcf581.css.map": "/patient-emr-dashboard/static/css/main.1fdcf581.css.map",
-    "main.e41bc6bb.js.map": "/patient-emr-dashboard/static/js/main.e41bc6bb.js.map"
+    "main.f33f1ee4.js.map": "/patient-emr-dashboard/static/js/main.f33f1ee4.js.map"
   },
   "entrypoints": [
     "static/css/main.1fdcf581.css",
-    "static/js/main.e41bc6bb.js"
+    "static/js/main.f33f1ee4.js"
   ]
 }
