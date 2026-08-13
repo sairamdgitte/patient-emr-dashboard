@@ -6,7 +6,7 @@ const TODAY = new Date().toISOString().split('T')[0];
 // Static demo patient — the admit form is always pre-filled with Mondo Kad
 const DEMO_POOL = [
   {
-    name: 'Mondo Kad', gender: 'Male', dob: '1945-01-10',
+    name: 'Mondo Kad', gender: 'Male', dob: '1945-01-10', language: 'Arabic',
     ward: 'Cardiac 5C', room: '5C-07', bed: 'A', attending: 'Dr. S. Lin',
     reason: 'Cardiac arrhythmia · anticoagulation review',
     conditions: 'cardiac-arrhythmia, arteriosclerosis',
@@ -106,6 +106,7 @@ const AdmitPatientModal = ({ onClose, onAdmit }) => {
       _bed: form.bed,
       _reason: form.reason,
       _attending: form.attending,
+      _language: form.language,
       _isNew: true, // Flag for delete button
     };
 
@@ -137,6 +138,7 @@ const AdmitPatientModal = ({ onClose, onAdmit }) => {
             <Select label="Gender" name="gender" value={form.gender} onChange={set} options={['Female', 'Male', 'Other']} required half />
             <Field label="Date of birth" name="dob" value={form.dob} onChange={set} type="date" required half />
             <Field label="Allergies" name="allergies" value={form.allergies} onChange={set} placeholder="comma-separated" half />
+            <Field label="Preferred language" name="language" value={form.language} onChange={set} placeholder="e.g. English" half />
           </div>
         </div>
 
