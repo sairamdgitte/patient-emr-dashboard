@@ -63,7 +63,7 @@ const PatientView = ({ p, onBack }) => {
       const res = await fetch(WH_IC, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ patientName: p.name, patientMobile: PAT_PHONE, hostMobile: HOST_PHONE })
+        body: JSON.stringify({ patientName: p.name, patientEmail: PAT_PHONE, hostEmail: HOST_PHONE })
       });
       console.log('Instant Connect response:', res.status);
       setIcStatus('Webex Instant Connect initiated! Both parties will receive a connection request.');
@@ -74,7 +74,7 @@ const PatientView = ({ p, onBack }) => {
           method: 'POST',
           mode: 'no-cors',
           headers: { 'Content-Type': 'text/plain' },
-          body: JSON.stringify({ patientName: p.name, patientMobile: PAT_PHONE, hostMobile: HOST_PHONE })
+          body: JSON.stringify({ patientName: p.name, patientEmail: PAT_PHONE, hostEmail: HOST_PHONE })
         });
         setIcStatus('Webex Instant Connect initiated! Both parties will receive a connection request.');
       } catch (e2) {
@@ -101,7 +101,7 @@ const PatientView = ({ p, onBack }) => {
 
   const sendSMS = async () => {
     try {
-      await fetch(WH_AI, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ patientName: p.name, patientMobile: PAT_PHONE, patientSummary: aiText }) });
+      await fetch(WH_AI, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ patientName: p.name, patientEmail: PAT_PHONE, patientSummary: aiText }) });
       alert('Summary sent to patient!');
     } catch (e) { alert('Failed to send.'); }
   };
