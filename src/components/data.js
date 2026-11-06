@@ -194,5 +194,5 @@ export const enrichSinglePatient = (rawPatient, index) => {
 export const WH_IC = "https://hooks.au.webexconnect.io/events/DRZFTVMQXP";
 export const WH_AI = "https://hooks.au.webexconnect.io/events/OWA9LRB1FL";
 export const HF_SPACE = "https://sairam17-patient-summary-api.hf.space/gradio_api/call/predict";
-export const PAT_PHONE = "sai.gitte@rmit.edu.au";
-export const HOST_PHONE = "marcus.lim3@rmit.edu.au";
+export const PAT_PHONE = "61414005070";
+export const HOST_PHONE = "61422251212";
